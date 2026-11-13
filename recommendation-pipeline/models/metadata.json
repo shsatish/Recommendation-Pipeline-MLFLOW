@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "global_mean": 3.271179487179487,
+  "smoothing": 8,
+  "personalization": "smoothed_user_genre_profile"
+}

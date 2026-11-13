@@ -1,0 +1,116 @@
+{
+  "run_id": "20261113T134249Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "stage": "ingestion",
+      "status": "SUCCESS",
+      "duration_seconds": 0.034,
+      "details": {
+        "users": 180,
+        "items": 95,
+        "interactions": 6507
+      }
+    },
+    {
+      "stage": "validation",
+      "status": "SUCCESS",
+      "duration_seconds": 0.088,
+      "details": {
+        "raw_interactions": 6507,
+        "valid_interactions": 6500,
+        "quarantined_interactions": 7,
+        "invalid_users": 0,
+        "invalid_items": 0,
+        "reason_counts": {
+          "invalid_rating": 1,
+          "duplicate_interaction_id": 7,
+          "duplicate_user_item": 4,
+          "unknown_user": 1,
+          "invalid_timestamp": 1,
+          "unknown_item": 1,
+          "missing_rating": 1,
+          "invalid_type_rating": 1,
+          "invalid_type_user_id": 1
+        },
+        "status": "PASS_WITH_QUARANTINE"
+      }
+    },
+    {
+      "stage": "preparation",
+      "status": "SUCCESS",
+      "duration_seconds": 0.043,
+      "details": {
+        "train_rows": 4875,
+        "test_rows": 1625,
+        "latest_train_timestamp": "2025-11-12T15:50:37+00:00",
+        "earliest_test_timestamp": "2025-11-12T17:43:10+00:00",
+        "strategy": "global_time_based"
+      }
+    },
+    {
+      "stage": "transformation",
+      "status": "SUCCESS",
+      "duration_seconds": 0.019,
+      "details": {
+        "users": 180,
+        "items": 95,
+        "matrix_shape": [
+          180,
+          95
+        ]
+      }
+    },
+    {
+      "stage": "features",
+      "status": "SUCCESS",
+      "duration_seconds": 0.057,
+      "details": {
+        "user_rows": 180,
+        "item_rows": 95,
+        "training_feature_rows": 4875
+      }
+    },
+    {
+      "stage": "training",
+      "status": "SUCCESS",
+      "duration_seconds": 0.011,
+      "details": {
+        "models": 2,
+        "global_rating": 3.271179487179487,
+        "smoothing": 8
+      }
+    },
+    {
+      "stage": "evaluation",
+      "status": "SUCCESS",
+      "duration_seconds": 0.369,
+      "details": {
+        "tracking_backend": "offline_json_only_mlflow_not_installed",
+        "results": [
+          {
+            "model": "popularity",
+            "precision_at_k": 0.0927,
+            "recall_at_k": 0.1128,
+            "ndcg_at_k": 0.1116,
+            "coverage": 0.1368,
+            "diversity": 0.7616,
+            "k": 5,
+            "evaluated_users": 177
+          },
+          {
+            "model": "personalized",
+            "precision_at_k": 0.122,
+            "recall_at_k": 0.1713,
+            "ndcg_at_k": 0.158,
+            "coverage": 0.6737,
+            "diversity": 0.0147,
+            "k": 5,
+            "evaluated_users": 177
+          }
+        ]
+      }
+    }
+  ],
+  "completed_at_utc": "2026-11-13T13:42:50.078761+00:00"
+}

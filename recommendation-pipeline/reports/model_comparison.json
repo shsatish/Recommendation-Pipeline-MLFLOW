@@ -1,0 +1,22 @@
+[
+  {
+    "model": "popularity",
+    "precision_at_k": 0.0927,
+    "recall_at_k": 0.1128,
+    "ndcg_at_k": 0.1116,
+    "coverage": 0.1368,
+    "diversity": 0.7616,
+    "k": 5,
+    "evaluated_users": 177
+  },
+  {
+    "model": "personalized",
+    "precision_at_k": 0.122,
+    "recall_at_k": 0.1713,
+    "ndcg_at_k": 0.158,
+    "coverage": 0.6737,
+    "diversity": 0.0147,
+    "k": 5,
+    "evaluated_users": 177
+  }
+]

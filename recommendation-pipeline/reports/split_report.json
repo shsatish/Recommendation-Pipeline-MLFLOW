@@ -1,0 +1,7 @@
+{
+  "train_rows": 4875,
+  "test_rows": 1625,
+  "latest_train_timestamp": "2025-11-12T15:50:37+00:00",
+  "earliest_test_timestamp": "2025-11-12T17:43:10+00:00",
+  "strategy": "global_time_based"
+}

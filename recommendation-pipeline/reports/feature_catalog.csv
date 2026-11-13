@@ -1,0 +1,12 @@
+feature,entity,type,description,source
+user_id,user,integer,User primary key,users
+user_avg_rating,user,float,Historical mean rating,train
+user_activity_count,user,integer,Historical interaction count,train
+preferred_category,user,string,Declared favorite category,users
+days_since_last_interaction,user,float,Days since last train event at train cutoff,train
+item_id,item,integer,Item primary key,items
+category,item,string,Movie genre,items
+item_popularity,item,integer,Historical interaction count,train
+item_avg_rating,item,float,Historical mean rating,train
+rating,interaction,integer,Training label (1-5),train
+category_match,interaction,boolean,User preference equals item genre,users+items

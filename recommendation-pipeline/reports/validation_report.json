@@ -1,0 +1,19 @@
+{
+  "raw_interactions": 6507,
+  "valid_interactions": 6500,
+  "quarantined_interactions": 7,
+  "invalid_users": 0,
+  "invalid_items": 0,
+  "reason_counts": {
+    "invalid_rating": 1,
+    "duplicate_interaction_id": 7,
+    "duplicate_user_item": 4,
+    "unknown_user": 1,
+    "invalid_timestamp": 1,
+    "unknown_item": 1,
+    "missing_rating": 1,
+    "invalid_type_rating": 1,
+    "invalid_type_user_id": 1
+  },
+  "status": "PASS_WITH_QUARANTINE"
+}
