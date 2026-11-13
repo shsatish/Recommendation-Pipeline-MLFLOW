@@ -133,6 +133,4 @@ $env:MLFLOW_ALLOW_FILE_STORE = "true"
 
 Open `http://127.0.0.1:5000`, choose **Model training** and the `movie_recommendation_pipeline` experiment. This opt-in is a compatibility workaround for the older MLflow tracking backend; SQLite tracking is preferable for future deployment. See `screenshots/README.md` for evidence mapping.
 
-## Student and submission
 
-**Student:** M K S Shanmugam | **Student ID:** 2025AG05451. See `reports/final_report.pdf` and `SUBMISSION_GUIDE.md`.
